@@ -9,7 +9,7 @@ services:
     - MONGO_DB_USERNAME=devdb
     - MONGO_DB_PASSWORD=devdb123
     ports:
-      - 8080:8080
+      - 9090:8080
     working_dir: /opt/app
     depends_on:
       - mongo
@@ -38,7 +38,7 @@ services:
     
 volumes:
   mongodb:
-    external: true
+    #external: true
     
 networks:
   springappnetwork:
